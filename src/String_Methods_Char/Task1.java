@@ -11,7 +11,7 @@ public class Task1 {
         int a = scanner.nextInt();        // a --> parolun uzunluğu
         int b;        // Random seçilib char-a castlanacaq dəyişən
         char c;      // Parolun elementləri olacaq dəyişən
-        String result = ""; // parol
+        String result = "";    // parol
         for (int i = 0; i < a; i++){
             //Istifadəçi tərəfindən təyin edilən a qədər random ədəd almaq üçün dövr
             b = random.nextInt(48,122);
