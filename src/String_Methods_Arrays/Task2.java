@@ -2,37 +2,39 @@ package String_Methods_Arrays;
 
 import java.util.Scanner;
 
-public class Task1 {
+public class Task2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Massivin neçə elementdən ibarət olacağını daxil edin: ");
         int a = scanner.nextInt(); // Massivin elementləri sayı
         System.out.print("Massivin elementlərini daxil edin: ");
         int[] array = new int[a];
+        int x = 1;
         for (int i = 0; i < a ; i++) {
             array [i] = scanner.nextInt();
         }
-        Maximum(array);
-        Minimum(array);
+
+        SumOfOdd(array);
+        ProductOfEven(array);
     }
 
-    public static void Minimum(int[] a) {
-        int x = a[0]; // Elementlərin ən böyüyünü mənimsədəcəyimiz dəyişən
+    public static void SumOfOdd(int[] a) {
+        int sum = 0;
         for (int i = 0; i < a.length; i++) {
-            if (x < a[i]) {
-                x = a[i];
+            if (a[i] % 2 == 1) {
+                sum = sum + a[i];
             }
         }
-        System.out.println("Daxil edilən massivin ən böyük elementi: "+x);
+        System.out.println("Daxil edilən massivin tək elementlərinin cəmi: "+sum);
     }
 
-    public static void Maximum(int[] a) {
-        int y = a[0]; // Elementlərin ən kiçiyini mənimsədəcəyimiz dəyişən
+    public static void ProductOfEven(int[] a) {
+        int x = 1;
         for (int i = 0; i < a.length; i++) {
-            if (y > a[i]) {
-                y = a[i];
+            if (a[i] % 2 == 0) {
+                x = x * a[i];
             }
         }
-        System.out.println("Daxil edilən massivin ən kiçik elementi: "+y);
+        System.out.println("Daxil edilən massivin cüt elementlərinin hasili: "+x);
     }
 }
