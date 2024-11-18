@@ -5,13 +5,10 @@ public class Store {
 
     public static int productsCount = 0;
 
-    public static int a = products.length;
-
     public static void addProduct(Product product) {
-        int percentage = (productsCount/a)*100;
+        int percentage = (productsCount/products.length)*100;
         if (percentage >= 80){
-            Product[] products1 = new Product[a*2];
-            a = a*2;
+            Product[] products1 = new Product[products.length*2];
             for (int i = 0; i < productsCount; i++) {
                 products1[i] = products[i];
             }

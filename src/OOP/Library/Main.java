@@ -2,7 +2,7 @@ package OOP.Library;
 
 import java.util.Scanner;
 
-import static OOP.Library.Book.books;
+import static OOP.Library.Book.*;
 
 public class Main {
     public static void main(String[] args) {
