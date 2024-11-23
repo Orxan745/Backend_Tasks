@@ -1,4 +1,4 @@
-package OOP.Store;
+package OOP.StoreTask;
 
 public class Store {
     public static Product[] products = new Product[10];

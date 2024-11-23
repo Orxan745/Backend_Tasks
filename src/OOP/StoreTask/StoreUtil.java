@@ -1,4 +1,4 @@
-package OOP.Store;
+package OOP.StoreTask;
 
 public class StoreUtil {
 
